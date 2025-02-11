@@ -59,10 +59,6 @@
     margin: 0;
     max-width: 240;
     justify-self: end;
-
-    /*
-    padding: 95px 50px 100px 184px; 
-    */
 }
 
 .cover {
@@ -71,13 +67,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-
-    /*
-
-    тут поработать со свойствами для фона-картинка не так растянута
-
-    */
-
 }
 
 .overlay {
@@ -101,21 +90,16 @@
 
 .title-text {
     z-index: 2;
-
-/* глянуть может надо отдельный класс для ОНО */
-
 }
 
 .title-text_center {
     justify-self: center;
     z-index: 2;
-
 }
 
 .title-text_right {
     justify-self: end;
     z-index: 2;
-
 }
 
 .subtitle {
@@ -124,26 +108,12 @@
     font-weight: 400;
     text-transform: uppercase;
     z-index: 2;
-    /* глянуть может надо отдельный класс */
-  /*
-
-    color: #FFFFFF;
-  
-  */
 }
 
 .cover__description-text {
-    /* 
-    
-    можно изменить word-spacing - ч
-    тобы пробелы -подстроить 
-    в аукцион вещей в кот... 
-    
-    */
     word-spacing: 20px;
     line-height: 28px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;   
 }
 
 
@@ -151,14 +121,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 50px 50px;
-
-    /*
-
-    по Pixel Perfect глянуть
-    нужно ли менять на
-    space-between и задавать paddings
-
-    */
 }
 
 .bet-button {
@@ -170,7 +132,6 @@
     background-color: #00000000;
     color: #FFFFFF;
     z-index: 2;
-    
 }
 
 .lots__card-list-item {
@@ -195,6 +156,7 @@
     height: 596px;
     width: 334px;
 }
+
 .lots__card-list {
     display: flex;
     padding: 27px 24px 30px;
@@ -202,7 +164,6 @@
     list-style-type: none;
     gap: 25px;
     flex-grow: 1;
-
 }
 
 .card__subtitle {
@@ -219,9 +180,6 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px; 
-
-  
-  
 }
 
 .card__text {
@@ -230,7 +188,6 @@
     padding-bottom: 48px;
     padding-right: 40px;
     padding-left: 40px;
-    
 }
 
 
@@ -242,24 +199,6 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
-   
-   
-
-    /*
-    padding: 48px 40px;
-
-    */
-
-    /*
-
-    align-items:center; не вижу изменений
-
-    /*
-
-    justify-content проследить - не нужно ли другое)
-
-    */
-
 }
 
 .lots {
@@ -269,7 +208,6 @@
 
 .lots__heading {
     padding-left: 64px;
-    
 }
 
 
@@ -278,14 +216,6 @@
 .body {
     margin-left: 0;
     margin-right: 0;
-
-    /* 
-
-по Pixel Perfect глянуть
-нужно ли добавить или убрать
-
-*/
-
 }
 
 .lots__look-more-link {
@@ -294,26 +224,15 @@
     border: #00000000;
     background: #00000000;
     padding-left: 64px;
-
-    /*
-
-    line-height: 24px - везде по классу установлено; 
-    а тут(23,48px in card-more) - посмотреть
-    надо ли менять по Пиксель Перфекиу
-
-    */
-
 }
 
 .footer {
     display: flex;
     margin-top: 180px;
-
 }
 
 .footer-menu {
     display: flex;
-
 }
 
 
@@ -390,5 +309,4 @@
 
 .footer__menu-link {
     line-height: 21.13px;
-
 }
