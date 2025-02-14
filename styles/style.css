@@ -1,10 +1,5 @@
 /* место для вашего кода */
 
-.body {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -31,7 +26,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21.13px;
-  text-decoration-style: underline;
+  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
@@ -39,22 +34,26 @@
   text-decoration: none;
 }
 
+.header__address {
+  justify-self: end;
+  max-width: 240px;
+  margin: 0;
+  padding-right: 50px;
+}
+
 .contacts {
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
   white-space: nowrap;
-}
-
-.phone {
-  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.email {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.address {
+  text-decoration: none;
 }
 
 .header__logo {
@@ -68,18 +67,9 @@
   height: 100%;
 }
 
-.header__address {
-  display: flex;
-  flex-direction: column;
-  justify-self: end;
-  max-width: 240px;
-  margin: 0;
-  padding-right: 50px;
-}
-
 .cover {
   position: relative;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -89,7 +79,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-color: #00000090;
+  background-color: #00000080;
 }
 
 .cover__title {
@@ -99,7 +89,12 @@
   padding: 165px 50px 106px;
 }
 
-.title-text {
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__title__aligned-text {
+  z-index: 2;
   color: #ffffff;
   font-weight: 700;
   font-size: 100px;
@@ -108,39 +103,18 @@
   text-transform: uppercase;
 }
 
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
-.aligned-text {
-  z-index: 2;
-}
-
 .aligned-text_center {
-  z-index: 2;
   justify-self: center;
 }
 
 .aligned-text_right {
-  z-index: 2;
   justify-self: end;
 }
 
 .subtitle {
   z-index: 2;
-  font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
-}
-
-.cover__description-text {
-  color: #ffffff;
-  line-height: 28px;
-  word-spacing: 20px;
-}
-
-.word-spacing_changed {
-  word-spacing: 17px;
 }
 
 .cover__description {
@@ -148,6 +122,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px 50px;
+}
+
+.cover__description-text {
+  color: #ffffff;
+  line-height: 28px;
+  word-spacing: 20px;
+  font-weight: 400;
+}
+
+.cover__description-text_word-spacing_reduced {
+  word-spacing: 17px;
 }
 
 .bet-button {
@@ -187,7 +172,6 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   gap: 25px;
   padding: 27px 24px 30px;
   list-style-type: none;
@@ -198,7 +182,8 @@
   padding-right: 40px;
   padding-left: 40px;
   color: #ffffff;
-  line-height: 26, 4px;
+  line-height: 26.4px;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -242,15 +227,6 @@
   text-decoration: underline;
   text-underline-offset: 4px;
   background: #00000000;
-}
-
-.footer {
-  display: flex;
-  margin-top: 180px;
-}
-
-.footer-menu {
-  display: flex;
 }
 
 .about {
@@ -311,14 +287,9 @@
   list-style: none;
 }
 
-.footer__social-list-item {
+.footer__social-icon {
   width: 48px;
   height: 48px;
-}
-
-.footer__address {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__menu {
@@ -331,6 +302,10 @@
 }
 
 .footer__menu-link {
-  text-decoration-style: underline;
+  text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
